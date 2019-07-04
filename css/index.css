@@ -1,0 +1,41 @@
+.container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.home_page {
+	display: none;
+}
+
+.one {
+	position: relative;
+}
+
+.one_magnify {
+	position: absolute;
+	top: 761px;
+	left: 500px;
+}
+
+.one_img_one {
+	position: fixed;
+	left: 1364px;
+	top: 30%;
+	z-index: 20;
+}
+
+.one_img_one img {
+	width: 1080px;
+	height: 100%;
+}
+
+.one_cover {
+	position: fixed;
+	top: 0;
+	left: 1364px;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 1080px;
+	height: 100%;
+	/* margin: 0 auto; */
+	display: none;
+}
