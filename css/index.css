@@ -7,21 +7,53 @@
 	display: none;
 }
 
-.one {
-	position: relative;
+.home_page img {
+	display: block;
 }
 
-.one_magnify {
+/* 第一页 */
+.one {
+	position: relative;
+	display: none;
+}
+
+.one img {
+	display: block;
+}
+
+/* 遮罩 */
+.one_cover {
+	position: absolute;
+	top: 0;
+	/* left: 1364px; */
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 1080px;
+	height: 100%;
+	/* margin: 0 auto; */
+	display: none;
+	z-index: 11;
+}
+
+/* 放大镜 */
+.one_magnify_one {
 	position: absolute;
 	top: 761px;
 	left: 500px;
 }
 
+.one_magnify_two {
+	position: absolute;
+	top: 817px;
+	left: 921px;
+}
+
+/* 放大图片 */
 .one_img_one {
-	position: fixed;
-	left: 1364px;
-	top: 30%;
+	position: absolute;
+	/* left: 1364px; */
+	top: 33%;
 	z-index: 20;
+	display: none;
 }
 
 .one_img_one img {
@@ -29,13 +61,408 @@
 	height: 100%;
 }
 
-.one_cover {
-	position: fixed;
+.one_img_two {
+	position: absolute;
+	/* left: 1364px; */
+	top: 27%;
+	z-index: 20;
+	display: none;
+}
+
+.one_img_two img {
+	width: 1080px;
+	height: 100%;
+}
+
+.one_img_three {
+	position: absolute;
+	/* left: 1364px; */
+	top: 8%;
+	z-index: 20;
+	display: none;
+}
+
+.one_img_three img {
+	width: 1080px;
+	height: 100%;
+}
+
+/* 点击空白div */
+.one_clik_one {
+	position: absolute;
+	width: 424px;
+	height: 203px;
+	top: 276px;
+	left: 119px;
+	background-color: #000000;
+	/* display: none; */
+	opacity: 0;
+}
+
+.one_clik_two {
+	position: absolute;
+	width: 357px;
+	height: 255px;
+	top: 545px;
+	left: 184px;
+	background-color: #000000;
+	/* display: none; */
+	opacity: 0;
+}
+
+.one_clik_three {
+	position: absolute;
+	width: 392px;
+	height: 588px;
+	top: 276px;
+	right: 113px;
+	background-color: #000000;
+	/* display: none; */
+	opacity: 0;
+}
+
+/* 左右箭头 */
+.one_arrows_left {
+	position: absolute;
+	bottom: 266px;
+	left: 190px;
+}
+
+.one_arrows_right {
+	position: absolute;
+	bottom: 266px;
+	right: 212px;
+}
+
+/* 2 */
+.two {
+	position: relative;
+	display: none;
+}
+
+.two img {
+	display: block;
+}
+
+/* 左右箭头 */
+.two_arrows_left {
+	position: absolute;
+	bottom: 266px;
+	left: 200px;
+}
+
+.two_arrows_right {
+	position: absolute;
+	bottom: 266px;
+	right: 212px;
+}
+
+/* 3 */
+.three {
+	position: relative;
+	display: none;
+}
+
+.three img {
+	display: block;
+}
+
+/* 放大镜 */
+.three_magnify_one {
+	position: absolute;
+	top: 699px;
+	left: 500px;
+}
+
+.three_magnify_two {
+	position: absolute;
+	top: 772px;
+	right: 113px;
+}
+
+/* 点击空白div */
+.three_clik_one {
+	position: absolute;
+	width: 408px;
+	height: 281px;
+	top: 460px;
+	left: 135px;
+	/* background-color: #000000; */
+	opacity: 0;
+}
+
+.three_clik_two {
+	position: absolute;
+	width: 369px;
+	height: 480px;
+	top: 335px;
+	left: 590px;
+	/* background-color: #000000; */
+	opacity: 0;
+}
+
+/* 放大图片 */
+.three_img_one {
+	position: absolute;
+	/* left: 1364px; */
+	top: 30%;
+	z-index: 20;
+	display: none;
+}
+
+.three_img_one img {
+	width: 1080px;
+	height: 100%;
+}
+
+.three_img_two {
+	position: absolute;
+	/* left: 1364px; */
+	top: 14%;
+	z-index: 20;
+	display: none;
+}
+
+.three_img_two img {
+	width: 1080px;
+	height: 100%;
+}
+
+/* 遮罩 */
+.three_cover {
+	position: absolute;
 	top: 0;
-	left: 1364px;
+	/* left: 1364px; */
 	background-color: rgba(0, 0, 0, 0.6);
 	width: 1080px;
 	height: 100%;
 	/* margin: 0 auto; */
 	display: none;
+	z-index: 11;
+}
+
+/* 左右箭头 */
+.three_arrows_left {
+	position: absolute;
+	bottom: 266px;
+	left: 200px;
+}
+
+.three_arrows_right {
+	position: absolute;
+	bottom: 266px;
+	right: 212px;
+}
+
+/* 4 */
+.four {
+	position: relative;
+	display: none;
+}
+
+.four img {
+	display: block;
+}
+
+/* 放大镜 */
+.four_magnify_one {
+	position: absolute;
+	top: 852px;
+	left: 700px;
+	z-index: 12;
+}
+
+/* 点击空白div */
+.four_clik_one {
+	position: absolute;
+	/* width: 408px; */
+	/* height: 281px; */
+	top: 372px;
+	left: 315px;
+	/* background-color: #000000; */
+	/* opacity: 0; */
+}
+
+/* 放大图片 */
+.four_img_one {
+	position: absolute;
+	/* left: 1364px; */
+	top: 17%;
+	z-index: 20;
+	display: none;
+}
+
+.four_img_one img {
+	width: 1080px;
+	height: 100%;
+}
+
+/* 遮罩 */
+.four_cover {
+	position: absolute;
+	top: 0;
+	/* left: 1364px; */
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 1080px;
+	height: 100%;
+	/* margin: 0 auto; */
+	display: none;
+	z-index: 11;
+}
+
+/* 左右箭头 */
+.four_arrows_left {
+	position: absolute;
+	bottom: 253px;
+	left: 211px;
+}
+
+.four_arrows_right {
+	position: absolute;
+	bottom: 253px;
+	right: 210px;
+}
+
+/* 5 */
+.five {
+	position: relative;
+	/* display: none; */
+}
+
+.five img {
+	display: block;
+}
+
+/* 放大镜 */
+.five_magnify_one {
+	position: absolute;
+	top: 566px;
+	left: 484px;
+	z-index: 11;
+}
+
+.five_magnify_two {
+	position: absolute;
+	top: 655px;
+	right: 156px;
+	z-index: 11;
+}
+
+.five_magnify_three {
+	position: absolute;
+	top: 926px;
+	left: 442px;
+	z-index: 11;
+}
+
+.five_magnify_four {
+	position: absolute;
+	top: 927px;
+	right: 142px;
+	z-index: 11;
+}
+
+/* 点击空白div */
+.five_clik_one {
+	position: absolute;
+	top: 349px;
+	left: 108px;
+}
+
+.five_clik_two {
+	position: absolute;
+	top: 803px;
+	left: 169px;
+}
+
+.five_clik_three {
+	position: absolute;
+	top: 341px;
+	left: 545px;
+}
+
+.five_clik_four {
+	position: absolute;
+	top: 803px;
+	right: 147px;
+}
+
+/* 放大图片 */
+.five_img_one {
+	position: absolute;
+	/* left: 1364px; */
+	top: 34%;
+	z-index: 20;
+	display: none;
+}
+
+.five_img_one img {
+	width: 1080px;
+	height: 100%;
+}
+
+.five_img_two {
+	position: absolute;
+	/* left: 1364px; */
+	top: 36%;
+	z-index: 20;
+	display: none;
+}
+
+.five_img_two img {
+	width: 1080px;
+	height: 100%;
+}
+
+.five_img_three {
+	position: absolute;
+	/* left: 1364px; */
+	top: 18%;
+	z-index: 20;
+	display: none;
+	background-color: #3a3939;
+}
+
+.five_img_three img {
+	width: 1080px;
+	height: 100%;
+}
+
+.five_img_four {
+	position: absolute;
+	/* left: 1364px; */
+	top: 31%;
+	z-index: 20;
+	display: none;
+}
+
+.five_img_four img {
+	width: 1080px;
+	height: 100%;
+}
+
+/* 遮罩 */
+.five_cover {
+	position: absolute;
+	top: 0;
+	/* left: 1364px; */
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 1080px;
+	height: 100%;
+	/* margin: 0 auto; */
+	display: none;
+	z-index: 12;
+}
+
+/* 左右箭头 */
+.five_arrows_left {
+	position: absolute;
+	bottom: 253px;
+	left: 211px;
+}
+
+.five_arrows_right {
+	position: absolute;
+	bottom: 253px;
+	right: 210px;
 }

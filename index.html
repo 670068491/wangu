@@ -14,13 +14,86 @@
 				</div>
 				<div class="one">
 					<img src="img/01/1.png">
+					<!-- 遮罩 -->
 					<div class="one_cover"></div>
-					<div class="one_magnify_one">
-						<img src="img/ICON/magnify.png">
-					</div>
-					<div class="one_img_one">
-						<img src="img/01/c.png">
-					</div>
+					<!-- 放大镜 -->
+					<div class="one_magnify_one"><img src="img/ICON/magnify.png"></div>
+					<div class="one_magnify_two"><img src="img/ICON/magnify.png"></div>
+					<!-- 放大图 -->
+					<div class="one_img_one"><img src="img/01/a.png"></div>
+					<div class="one_img_two"><img src="img/01/b.png"></div>
+					<div class="one_img_three"><img src="img/01/c.png"></div>
+					<!-- 点击图 -->
+					<div class="one_clik_one"></div>
+					<div class="one_clik_two"></div>
+					<div class="one_clik_three"></div>
+					<!-- 左右箭头 -->
+					<div class="one_arrows_left"> <img src="img/ICON/left.png"></div>
+					<div class="one_arrows_right"> <img src="img/ICON/right.png"></div>
+				</div>
+				<!-- 2 -->
+				<div class="two">
+					<img src="img/02/2.png">
+					<!-- 左右箭头 -->
+					<div class="two_arrows_left"> <img src="img/ICON/left.png"></div>
+					<div class="two_arrows_right"> <img src="img/ICON/right.png"></div>
+				</div>
+				<!-- 3 -->
+				<div class="three">
+					<img src="img/03/3.png">
+					<!-- 遮罩 -->
+					<div class="three_cover"></div>
+					<!-- 放大镜 -->
+					<div class="three_magnify_one"><img src="img/ICON/magnify.png"></div>
+					<div class="three_magnify_two"><img src="img/ICON/magnify.png"></div>
+					<!-- 点击图 -->
+					<div class="three_clik_one"></div>
+					<div class="three_clik_two"></div>
+					<!-- 放大图 -->
+					<div class="three_img_one"><img src="img/03/a.png"></div>
+					<div class="three_img_two"><img src="img/03/b.png"></div>
+					<!-- 左右箭头 -->
+					<div class="three_arrows_left"> <img src="img/ICON/left.png"></div>
+					<div class="three_arrows_right"> <img src="img/ICON/right.png"></div>
+				</div>
+				<!-- 4 -->
+				<div class="four">
+					<img src="img/04/4.png">
+					<!-- 遮罩 -->
+					<div class="four_cover"></div>
+					<!-- 放大镜 -->
+					<div class="four_magnify_one"><img src="img/ICON/magnify.png"></div>
+					<!-- 点击图 -->
+					<div class="four_clik_one"><img src="img/04/s.png"></div>
+					<!-- 放大图 -->
+					<div class="four_img_one"><img src="img/04/a.png"></div>
+					<!-- 左右箭头 -->
+					<div class="four_arrows_left"> <img src="img/ICON/left.png"></div>
+					<div class="four_arrows_right"> <img src="img/ICON/right.png"></div>
+				</div>
+				<!-- 5 -->
+				<div class="five">
+					<img src="img/05/5.png">
+					<!-- 遮罩 -->
+					<div class="five_cover"></div>
+					<!-- 放大镜 -->
+					<div class="five_magnify_one"><img src="img/ICON/magnify.png"></div>
+					<div class="five_magnify_two"><img src="img/ICON/magnify.png"></div>
+					<div class="five_magnify_three"><img src="img/ICON/magnify.png"></div>
+					<div class="five_magnify_four"><img src="img/ICON/magnify.png"></div>
+					<!-- 点击图 -->
+					<div class="five_clik_one"><img src="img/05/s-1.png"></div>
+					<div class="five_clik_two"><img src="img/05/s-2.png"></div>
+					<div class="five_clik_three"><img src="img/05/s-3.png"></div>
+					<div class="five_clik_four"><img src="img/05/s-4.png"></div>
+					<!-- 放大图 -->
+					<div class="five_img_one"><img src="img/05/a.png"></div>
+					<div class="five_img_two"><img src="img/05/b.png"></div>
+					<div class="five_img_three"><img src="img/05/c.png"></div>
+					<div class="five_img_four"><img src="img/05/d.png"></div>
+					<!-- 左右箭头 -->
+					<div class="five_arrows_left"> <img src="img/ICON/left.png"></div>
+					<div class="five_arrows_right"> <img src="img/ICON/right.png"></div>
 				</div>
 			</div>
 		</div>
@@ -28,10 +101,160 @@
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"> </script>
 		<script type="text/javascript">
 			$(function() {
-				// one
-				$(".add").click(function() {
-
+				// home
+				$(".home_page").click(function() {
+					$(".one").fadeIn("normal");
+					$(".home_page").fadeOut("normal");
 				})
+				// 1
+				$(".one_clik_one").click(function() {
+					$(".one_cover").fadeIn("normal");
+					$(".one_img_one").fadeIn("normal");
+				})
+				$(".one_img_one").click(function() {
+					$(".one_cover").fadeOut("normal");
+					$(".one_img_one").fadeOut("normal");
+				})
+				$(".one_clik_two").click(function() {
+					$(".one_cover").fadeIn("normal");
+					$(".one_img_two").fadeIn("normal");
+				})
+				$(".one_img_two").click(function() {
+					$(".one_cover").fadeOut("normal");
+					$(".one_img_two").fadeOut("normal");
+				})
+				$(".one_clik_three").click(function() {
+					$(".one_cover").fadeIn("normal");
+					$(".one_img_three").fadeIn("normal");
+				})
+				$(".one_img_three").click(function() {
+					$(".one_cover").fadeOut("normal");
+					$(".one_img_three").fadeOut("normal");
+				})
+				// 左右箭头
+				$(".one_arrows_left").click(function() {
+					$(".two").fadeIn("normal");
+					$(".one").fadeOut("normal");
+				})
+				$(".one_arrows_right").click(function() {
+					$(".home_page").fadeIn("normal");
+					$(".one").fadeOut("normal");
+				})
+				// 2
+				// 左右箭头
+				$(".two_arrows_left").click(function() {
+					$(".three").fadeIn("normal");
+					$(".two").fadeOut("normal");
+				})
+				$(".two_arrows_right").click(function() {
+					$(".one").fadeIn("normal");
+					$(".two").fadeOut("normal");
+				})
+				// 3
+				$(".three_clik_one").click(function() {
+					$(".three_cover").fadeIn("normal");
+					$(".three_img_one").fadeIn("normal");
+				})
+				$(".three_img_one").click(function() {
+					$(".three_cover").fadeOut("normal");
+					$(".three_img_one").fadeOut("normal");
+				})
+				$(".three_clik_two").click(function() {
+					$(".three_cover").fadeIn("normal");
+					$(".three_img_two").fadeIn("normal");
+				})
+				$(".three_img_two").click(function() {
+					$(".three_cover").fadeOut("normal");
+					$(".three_img_two").fadeOut("normal");
+				})
+				// 左右箭头
+				$(".three_arrows_left").click(function() {
+					$(".four").fadeIn("normal");
+					$(".three").fadeOut("normal");
+				})
+				$(".three_arrows_right").click(function() {
+					$(".two").fadeIn("normal");
+					$(".three").fadeOut("normal");
+				})
+				// 4
+				$(".four_clik_one").click(function() {
+					$(".four_cover").fadeIn("normal");
+					$(".four_img_one").fadeIn("normal");
+				})
+				$(".four_img_one").click(function() {
+					$(".four_cover").fadeOut("normal");
+					$(".four_img_one").fadeOut("normal");
+				})
+				// 左右箭头
+				$(".four_arrows_left").click(function() {
+					$(".five").fadeIn("normal");
+					$(".four").fadeOut("normal");
+				})
+				$(".four_arrows_right").click(function() {
+					$(".three").fadeIn("normal");
+					$(".four").fadeOut("normal");
+				})
+				// 5
+				// 点击
+				$(".five_clik_one").click(function() {
+					$(".five_cover").fadeIn("normal");
+					$(".five_img_one").fadeIn("normal");
+				})
+				$(".five_img_one").click(function() {
+					$(".five_cover").fadeOut("normal");
+					$(".five_img_one").fadeOut("normal");
+				})
+				$(".five_clik_two").click(function() {
+					$(".five_cover").fadeIn("normal");
+					$(".five_img_two").fadeIn("normal");
+				})
+				$(".five_img_two").click(function() {
+					$(".five_cover").fadeOut("normal");
+					$(".five_img_two").fadeOut("normal");
+				})
+				$(".five_clik_three").click(function() {
+					$(".five_cover").fadeIn("normal");
+					$(".five_img_three").fadeIn("normal");
+				})
+				$(".five_img_three").click(function() {
+					$(".five_cover").fadeOut("normal");
+					$(".five_img_three").fadeOut("normal");
+				})
+				$(".five_clik_four").click(function() {
+					$(".five_cover").fadeIn("normal");
+					$(".five_img_four").fadeIn("normal");
+				})
+				$(".five_img_four").click(function() {
+					$(".five_cover").fadeOut("normal");
+					$(".five_img_four").fadeOut("normal");
+				})
+				// 左右箭头
+				$(".five_arrows_left").click(function() {
+					$(".six").fadeIn("normal");
+					$(".five").fadeOut("normal");
+				})
+				$(".five_arrows_right").click(function() {
+					$(".four").fadeIn("normal");
+					$(".five").fadeOut("normal");
+				})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
