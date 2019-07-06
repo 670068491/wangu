@@ -1,3 +1,16 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: outside none none;
+}
+
 .container {
 	width: 1080px;
 	margin: 0 auto;
@@ -326,7 +339,7 @@
 /* 5 */
 .five {
 	position: relative;
-	/* display: none; */
+	display: none;
 }
 
 .five img {
@@ -465,4 +478,306 @@
 	position: absolute;
 	bottom: 253px;
 	right: 210px;
+}
+
+/* 6 */
+.six {
+	position: relative;
+	/* display: none; */
+}
+
+.six img {
+	display: block;
+}
+
+/* 放大镜 */
+.six_magnify_one {
+	position: absolute;
+	z-index: 11;
+	bottom: 770px;
+	left: 351px;
+}
+
+.six_magnify_two {
+	position: absolute;
+	bottom: 770px;
+	left: 586px;
+	z-index: 11;
+}
+
+.six_magnify_three {
+	position: absolute;
+	bottom: 770px;
+	right: 208px;
+	z-index: 11;
+}
+
+.six_magnify_four {
+	position: absolute;
+	bottom: 587px;
+	left: 353px;
+	z-index: 11;
+}
+
+.six_magnify_five {
+	position: absolute;
+	bottom: 587px;
+	left: 588px;
+	z-index: 11;
+}
+
+.six_magnify_six {
+	position: absolute;
+	bottom: 587px;
+	right: 209px;
+	z-index: 11;
+}
+
+/* 点击空白div */
+.six_clik_one {
+	position: absolute;
+	bottom: 774px;
+	left: 205px;
+}
+
+.six_clik_two {
+	position: absolute;
+	bottom: 774px;
+	left: 434px;
+}
+
+.six_clik_three {
+	position: absolute;
+	bottom: 774px;
+	right: 205px;
+}
+
+.six_clik_four {
+	position: absolute;
+	bottom: 591px;
+	left: 205px;
+}
+
+.six_clik_five {
+	position: absolute;
+	bottom: 591px;
+	left: 434px;
+}
+
+.six_clik_six {
+	position: absolute;
+	bottom: 591px;
+	right: 205px;
+}
+
+/* 放大图片 */
+.six_img_one {
+	position: absolute;
+	/* left: 1364px; */
+	top: 34%;
+	z-index: 20;
+	display: none;
+}
+
+.six_img_one img {
+	width: 1080px;
+	height: 100%;
+}
+
+.six_img_two {
+	position: absolute;
+	/* left: 1364px; */
+	top: 32%;
+	z-index: 20;
+	display: none;
+}
+
+.six_img_two img {
+	width: 1080px;
+	height: 100%;
+}
+
+.six_img_three {
+	position: absolute;
+	/* left: 1364px; */
+	top: 29%;
+	z-index: 20;
+	display: none;
+	/* background-color: #3a3939; */
+}
+
+.six_img_three img {
+	width: 1080px;
+	height: 100%;
+}
+
+.six_img_four {
+	position: absolute;
+	/* left: 1364px; */
+	top: 32%;
+	z-index: 20;
+	display: none;
+}
+
+.six_img_four img {
+	width: 1080px;
+	height: 100%;
+}
+
+.six_img_five {
+	position: absolute;
+	/* left: 1364px; */
+	top: 31%;
+	z-index: 20;
+	display: none;
+}
+
+.six_img_five img {
+	width: 1080px;
+	height: 100%;
+}
+
+.six_img_six {
+	position: absolute;
+	/* left: 1364px; */
+	top: 31%;
+	z-index: 20;
+	display: none;
+}
+
+.six_img_six img {
+	width: 1080px;
+	height: 100%;
+}
+
+/* 遮罩 */
+.six_cover {
+	position: absolute;
+	top: 0;
+	/* left: 1364px; */
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 1080px;
+	height: 100%;
+	/* margin: 0 auto; */
+	display: none;
+	z-index: 12;
+}
+
+/* 左右箭头 */
+.six_arrows_left {
+	position: absolute;
+	bottom: 253px;
+	left: 211px;
+}
+
+.six_arrows_right {
+	position: absolute;
+	bottom: 253px;
+	right: 210px;
+}
+
+/* 小图轮播 */
+.six_slider {
+	position: absolute;
+	top: 372px;
+	left: 203px;
+}
+
+.slider {
+	width: 702px;
+	height: 252px;
+	text-align: center;
+	/* margin: 30px auto; */
+	position: relative;
+}
+
+.slider-panel img,
+.slider-extra {
+	width: 326px;
+	height: 252px;
+}
+
+.slider-panel,
+.slider-pre,
+.slider-next {
+	position: absolute;
+	z-index: 8;
+}
+
+.slider-panel img {
+	border: none;
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.slider-panel a {
+	position: relative;
+}
+
+.slider-panel .slider-span {
+	position: absolute;
+	top: 25px;
+	left: 31px;
+	width: 280px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	color: #A55B1E;
+}
+
+.slider-panel .slider-span-two {
+	position: absolute;
+	top: 25px;
+	right: 5px;
+	display: block;
+	width: 354px;
+	text-align: center;
+	font-size: 20px;
+	color: #A55B1E;
+}
+
+.slider-extra {
+	position: relative;
+}
+
+.slider-page a {
+	position: absolute;
+	text-align: center;
+	display: block;
+	/* 	width: 28px;
+	height: 62px; */
+	/* margin-top: -31px; */
+	top: 41%;
+}
+
+.slider-page .slider-pre {
+	left: -79px;
+	display: none;
+}
+
+.slider-next {
+	right: -432px;
+}
+
+/* 7 */
+.seven {
+	position: relative;
+	display: none;
+}
+
+.seven img {
+	display: block;
+}
+
+/* 左右箭头 */
+.seven_arrows_left {
+	position: absolute;
+	bottom: 266px;
+	left: 200px;
+}
+
+.seven_arrows_right {
+	position: absolute;
+	bottom: 266px;
+	right: 212px;
 }
